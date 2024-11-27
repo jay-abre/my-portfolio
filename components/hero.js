@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pl-16 lg:pl-24">
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 lg:pl-24">
       <div className="text-center lg:text-left lg:flex lg:items-center lg:justify-between">
         <motion.div
           className="lg:w-1/2"
@@ -51,4 +51,4 @@ export function Hero() {
       </div>
     </section>
   )
-}
+} 
