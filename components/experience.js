@@ -3,12 +3,12 @@ import { motion } from 'framer-motion'
 const experienceData = [
   {
     title: "AI Engineer Intern",
-    company: "Stratpoint Technologies ",
+    company: "Stratpoint Technologies",
     period: "Jun 2024 - Sept 2024",
     responsibilities: [
       "Collaborated with AI engineers on a chatbot development project, contributing to its design, implementation, and enhancement to improve conversational AI capabilities.",
-      "Assisted in rigorous testing and debugging to ensure chatbot accuracy and reliability.",
-      "Mentored junior devDesigned and implemented a FastAPI application to integrate chatbot functionalities seamlessly into the system."
+      "Assisted in  testing and debugging to ensure chatbot accuracy and reliability.",
+      "Designed and implemented a FastAPI application to integrate chatbot functionalities seamlessly into the system."
     ]
   },
   {
@@ -46,7 +46,7 @@ export function Experience() {
             <h3 className="text-xl font-semibold mb-2">{exp.title}</h3>
             <p className="text-primary mb-1">{exp.company}</p>
             <p className="text-sm text-muted-foreground mb-2">{exp.period}</p>
-            <ul className="list-disc list-inside">
+            <ul className="list-disc list-inside text-justify">
               {exp.responsibilities.map((resp, i) => (
                 <li key={i} className="mb-1">{resp}</li>
               ))}
@@ -57,4 +57,3 @@ export function Experience() {
     </section>
   )
 }
-

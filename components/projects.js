@@ -28,7 +28,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-16 pl-16 lg:pl-24">
+    <section id="projects" className="py-16 px-4 lg:px-24">
       <motion.h2
         className="text-3xl md:text-4xl font-bold mb-12 text-center"
         initial={{ opacity: 0, y: 20 }}
@@ -75,7 +75,7 @@ export function Projects() {
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-muted-foreground">{project.description}</p>
+              <p className="text-muted-foreground text-justify">{project.description}</p>
             </div>
           </motion.div>
         ))}
